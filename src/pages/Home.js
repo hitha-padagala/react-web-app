@@ -1,6 +1,6 @@
 import { Box, Card, CardContent, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import Layout from "./Layout";
+import Layout from "../components/layout/Layout";
 
 export default function Home() {
   const navigate = useNavigate();

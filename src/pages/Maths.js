@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Box, Typography, TextField, Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import Layout from "./Layout";
+import Layout from "../components/layout/Layout";
 
 export default function Maths() {
   const navigate = useNavigate();

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Box, Typography, Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import Layout from "./Layout";
+import Layout from "../components/layout/Layout";
 
 const questions = [
   {

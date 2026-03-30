@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Home";
-import Maths from "./Maths";
-import Telugu from "./Telugu";
-import English from "./English";
+import Home from "./pages/Home";
+import Maths from "./pages/Maths";
+import Telugu from "./pages/Telugu";
+import English from "./pages/English";
 
 function App() {
   return (
