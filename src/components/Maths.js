@@ -16,21 +16,21 @@ export default function Maths() {
 
   // 🎲 Generate random question
   const generateQuestion = () => {
-  const ops = ["+", "-", "×"];
-  const op = ops[Math.floor(Math.random() * ops.length)];
+    const ops = ["+", "-", "×"];
+    const op = ops[Math.floor(Math.random() * ops.length)];
 
-  let a = Math.floor(Math.random() * 10); // 0–9
-  let b = Math.floor(Math.random() * 10); // 0–9
+    let a = Math.floor(Math.random() * 10); // 0–9
+    let b = Math.floor(Math.random() * 10); // 0–9
 
-  // avoid negative subtraction
-  if (op === "-" && a < b) {
-    [a, b] = [b, a];
-  }
+    // avoid negative subtraction
+    if (op === "-" && a < b) {
+      [a, b] = [b, a];
+    }
 
-  setNum1(a);
-  setNum2(b);
-  setOperator(op);
-};
+    setNum1(a);
+    setNum2(b);
+    setOperator(op);
+  };
 
   useEffect(() => {
     generateQuestion();
@@ -81,19 +81,12 @@ export default function Maths() {
       <br />
 
       {/* ✅ Submit */}
-      <Button
-        variant="contained"
-        onClick={checkAnswer}
-        sx={{ marginTop: 2 }}
-      >
+      <Button variant="contained" onClick={checkAnswer} sx={{ marginTop: 2 }}>
         Submit
       </Button>
 
       {/* 🎉 Result */}
-      <Typography sx={{ marginTop: 2, fontSize: "20px" }}>
-        {result}
-      </Typography>
-    
+      <Typography sx={{ marginTop: 2, fontSize: "20px" }}>{result}</Typography>
     </Layout>
   );
 }

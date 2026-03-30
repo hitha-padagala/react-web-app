@@ -7,23 +7,23 @@ const questions = [
   {
     sentence: "The cat is ___",
     options: ["run", "running", "runs"],
-    answer: "running"
+    answer: "running",
   },
   {
     sentence: "She ___ to school every day",
     options: ["go", "goes", "going"],
-    answer: "goes"
+    answer: "goes",
   },
   {
     sentence: "They are ___ cricket",
     options: ["play", "playing", "plays"],
-    answer: "playing"
+    answer: "playing",
   },
   {
     sentence: "I ___ a mango",
     options: ["eat", "eats", "eating"],
-    answer: "eat"
-  }
+    answer: "eat",
+  },
 ];
 
 export default function English() {
@@ -52,19 +52,15 @@ export default function English() {
   return (
     <Layout>
       <Box sx={{ textAlign: "center", marginTop: 4 }}>
-
-
         {/* ⭐ Score */}
-        <Typography sx={{ marginTop: 2 }}>
-          ⭐ Score: {score}
-        </Typography>
+        <Typography sx={{ marginTop: 2 }}>⭐ Score: {score}</Typography>
 
         {/* 🧠 Question */}
         <Typography
           sx={{
             fontSize: "28px",
             marginTop: "30px",
-            fontWeight: "bold"
+            fontWeight: "bold",
           }}
         >
           {current.sentence}
@@ -79,7 +75,7 @@ export default function English() {
               sx={{
                 margin: 1,
                 padding: "10px 20px",
-                borderRadius: "15px"
+                borderRadius: "15px",
               }}
               onClick={() => checkAnswer(opt)}
             >
@@ -89,10 +85,7 @@ export default function English() {
         </Box>
 
         {/* 🎉 Result */}
-        <Typography sx={{ marginTop: 2 }}>
-          {result}
-        </Typography>
-
+        <Typography sx={{ marginTop: 2 }}>{result}</Typography>
       </Box>
     </Layout>
   );

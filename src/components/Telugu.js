@@ -7,28 +7,29 @@ const vegetables = [
   {
     telugu: "టమోటా",
     phonetic: "tamoTa",
-    image: "https://upload.wikimedia.org/wikipedia/commons/8/88/Bright_red_tomato_and_cross_section02.jpg"
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/8/88/Bright_red_tomato_and_cross_section02.jpg",
   },
   {
     telugu: "బంగాళాదుంప",
     phonetic: "bangaladumpa",
-    image: "https://upload.wikimedia.org/wikipedia/commons/6/60/Patates.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/60/Patates.jpg",
   },
   {
     telugu: "కారెట్",
     phonetic: "kaarat",
-    image: "https://upload.wikimedia.org/wikipedia/commons/7/7e/Carrots.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/7e/Carrots.jpg",
   },
   {
     telugu: "వంకాయ",
     phonetic: "vankaaya",
-    image: "https://upload.wikimedia.org/wikipedia/commons/1/15/Eggplant.jpg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/15/Eggplant.jpg",
   },
   {
     telugu: "దోసకాయ",
     phonetic: "dosakaaya",
-    image: "https://upload.wikimedia.org/wikipedia/commons/9/96/Cucumber.jpg"
-  }
+    image: "https://upload.wikimedia.org/wikipedia/commons/9/96/Cucumber.jpg",
+  },
 ];
 
 export default function Telugu() {
@@ -53,7 +54,6 @@ export default function Telugu() {
   return (
     <Layout>
       <Box sx={{ textAlign: "center", marginTop: 4 }}>
-
         {/* 🖼 Image */}
         <img
           src={current.image}
@@ -64,7 +64,7 @@ export default function Telugu() {
             objectFit: "cover",
             borderRadius: "20px",
             marginTop: "30px",
-            boxShadow: "0 6px 15px rgba(0,0,0,0.1)"
+            boxShadow: "0 6px 15px rgba(0,0,0,0.1)",
           }}
         />
 
@@ -73,7 +73,7 @@ export default function Telugu() {
           sx={{
             fontSize: "34px",
             marginTop: "20px",
-            fontWeight: "bold"
+            fontWeight: "bold",
           }}
         >
           {current.telugu}
@@ -84,15 +84,12 @@ export default function Telugu() {
           sx={{
             fontSize: "20px",
             color: "#666",
-            marginTop: "5px"
+            marginTop: "5px",
           }}
-        >
-        
-        </Typography>
+        ></Typography>
 
         {/* 🎯 Buttons */}
         <Box sx={{ marginTop: 3 }}>
-
           {/* 🔊 Listen */}
           <Button
             variant="contained"
@@ -106,9 +103,7 @@ export default function Telugu() {
           <Button variant="outlined" onClick={next}>
             ➡ Next
           </Button>
-
         </Box>
-
       </Box>
     </Layout>
   );
