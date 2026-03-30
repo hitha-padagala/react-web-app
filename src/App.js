@@ -10,9 +10,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/maths" element={<Maths />} />
-        <Route path="/telugu" element={<Telugu/>}/>
-        <Route path="/english" element = {<English/>}/>
-        
+        <Route path="/telugu" element={<Telugu />} />
+        <Route path="/english" element={<English />} />
       </Routes>
     </BrowserRouter>
   );
